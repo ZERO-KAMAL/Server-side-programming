@@ -1,19 +1,37 @@
-const  App = () => {
-  // const [count, setCount] = useState(0)
-//  console.log("hello world")
 
-const now = new Date()
-const a = 10
-const b = 20
-console.log(now, a+b)
+import ExerciseOne from "./exerciseOne"
+
+
+const Hello = ({props}) => {
+  // console.log(props)
+  return (
+    <div>
+      <p>Hello {props.name}, you are {props.age} year old</p>
+    </div>
+  )
+}
+
+const App = () => {
+  const students = [
+    {
+      name: "kamal",
+      age: 20
+    },
+    {
+      name: "kamal Khatri",
+      age: 18
+    },
+  ]
   return (
     <>
       <div>
-      <p>Hello world, it is {now.toString()}</p>
-      <p>
-        {a} plus {b} is {a + b}
-      </p>
-    </div>
+        <h1>Greetings</h1>
+        {students.map((student, index) => (
+          <Hello key={index} props={student} />
+        ))}
+
+        <ExerciseOne/>
+      </div>
     </>
   )
 }
