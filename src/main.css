@@ -1,4 +1,28 @@
-body{
+body {
     background-color: black;
     color: white;
+}
+
+.listStyle {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+    li {
+        display: flex;
+        gap: .5rem;
+        padding: .5rem;
+        align-items: center;
+        &:nth-child(even) {
+            background-color: blue;
+        }
+
+        &:nth-child(odd) {
+            background-color: red;
+        }
+    }
 }

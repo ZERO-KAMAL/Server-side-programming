@@ -76,7 +76,7 @@ const PhoneBookComponent = () => {
 
             <Filter
                 filter={filter}
-                handleFilterChange={(e) => setFilter(e.target.value)}
+                handleFilterChange={(event) => setFilter(event.target.value)}
             />
 
             <h3>Add a new</h3>
@@ -85,8 +85,8 @@ const PhoneBookComponent = () => {
                 onSubmit={handleAddPerson}
                 newName={newName}
                 newNum={newNum}
-                handleNameChange={(e) => setNewName(e.target.value)}
-                handleNumChange={(e) => setNewNum(e.target.value)}
+                handleNameChange={(event) => setNewName(event.target.value)}
+                handleNumChange={(event) => setNewNum(event.target.value)}
             />
 
             <h3>Numbers</h3>

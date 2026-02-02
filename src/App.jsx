@@ -9,6 +9,7 @@ import Header from "./Header";
 import UseStateLearnComponent from "./useStateLearn";
 import CourseComponent from "./Course";
 import PhoneBookComponent from "./phoneBook";
+import FetchingDataComponent from "./fetchingdata"
 
 
 
@@ -143,6 +144,8 @@ const App = () => {
         ))} */}
 
         <PhoneBookComponent />
+
+        <FetchingDataComponent />
         
       </div>
     </>
