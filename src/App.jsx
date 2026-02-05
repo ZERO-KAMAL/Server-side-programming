@@ -10,6 +10,7 @@ import UseStateLearnComponent from "./useStateLearn";
 import CourseComponent from "./Course";
 import PhoneBookComponent from "./phoneBook";
 import FetchingDataComponent from "./fetchingdata"
+import Task212 from "../task212";
 
 
 
@@ -143,9 +144,11 @@ const App = () => {
           <CourseComponent key={course.id} course={course} />
         ))} */}
 
-        <PhoneBookComponent />
+        {/* <PhoneBookComponent /> */}
 
-        <FetchingDataComponent />
+        {/* <FetchingDataComponent /> */}
+
+        <Task212 />
         
       </div>
     </>
